@@ -1,41 +1,47 @@
-# Thesis / Paper Title
-This repository is a companion page for the following thesis / publication:
-> Author Names. Publication year. Thesis / Paper title. Publication venue / proceedings.
+# Let's Start Reducing the Carbon Footprint of Academic Conferences.
+This repository is a companion page for the following publication:
+> Anonymous Authors, blinded for review. 2022. Let's Start Reducing the Carbon Footprint of Academic Conferences.
 
-It contains all the material required for replicating the study, including: X, Y, and Z.
+It contains all the material required for replicating the study, including: SLR-protocol, figures, results.
 
-Quick start
+Quick Links
 ---------------
-Here a documentation on how to use the replication material should be provided.
 
-### Getting started
-
-1. Provide step-by-step instruction on how to use this repository, including requirements, and installation / script execution steps.
-
-2. Code snippets should be formatted as follows.
-   - `git clone https://github.com/S2-group/template-replication-package`
-
-3. Links to specific folders / files of the repository can be linked in Markdown, for example this is a link to the [src](src/) folder.
+* [SLR_Protocol.xlsx](data/SLR_Protocol.xlsx)
+* [Appendix A - Interview-Survey-Design.pdf](data/Interview-Survey-Design.pdf)
+* [Appendix B - Table_Carbon-Footprint-Factors.pdf](results/Table_Carbon-Footprint-Factors.pdf)
+* [Appendix C - Table_Sustainability-Dimensions.pdf](results/Table_Sustainability-Dimensions.pdf)
 
 Repository Structure
 ---------------
 This is the root directory of the repository. The directory is structured as follows:
 
-    template-replication-package
+    SLR-Carbon-Footprint-replication-package
      .
      |
-     |--- src/                             Source code used in the thesis / paper
-     |
-     |--- documentation/                   Further structured documentation of the replication package content
-     |
-     |--- data/                            Data used in the thesis / paper 
+     |--- data/
             |
-            |--- additional_subfolder/     Subfolders should be further nested to increase readability                 
-  
-
-Usually, replication packages should include:
-* a [src](src/) folder, containing the entirety of the source code used in the study,
-* a [data](data/) folder, containing the raw, intermediate, and final data of the study
-* if needed, a [documentation](documentation/) folder, where additional information w.r.t. this README is provided. 
-
-In addition, the replication package can include additional data/results (in form of raw data, tables, and/or diagrams) which were not included in the study manuscript.
+            |--- Interview-Survey-Design.pdf
+                    Appendix A - Interview survey structure and questions.
+            |--- SLR_Protocol.xlsx
+                    The main protocol (spreadsheet) for the SLR with all considerd SLR phases (selection Phase 1-3, extraction).
+            |--- SLR_FINAL_PS.bib
+                    All final primary studies for the SLR part, exported from Zotero as BibTex file.
+     |
+     |--- results/
+            |
+            |--- /figures
+                     |--- *.drawio
+                             Figures raw sources for draw.io.
+                     |--- *.png, *.pdf
+                             Contains all produced and used figures throughout this research.
+            |
+            |--- Table_Carbon-Footprint-Factors.pdf
+                    Appendix B - Result table containing the carbon footprint factors.
+            |--- Table_Sustainability-Dimensions.pdf
+                    Appendix C - Result table containing the sustainability impact.
+     |
+     |--- src/
+            |
+            |--- SLR_Results.R
+                    R-Script for the statistics and figures used throughout this research. The final figures can be find in the folder 'figures'.              
